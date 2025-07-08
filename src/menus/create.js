@@ -17,6 +17,14 @@ export async function createTaskMenu() {
     if(isCancel(name)){
         mainMenu();
         return;
-
     }
+
+    const task = {
+        name, 
+        status: "Em andamento", 
+        createdAt: new Date().toISOString()
+    }
+    taskManager.create(task);
+    log.success("Tareda criada com sucesso!"); 
+    setTimeout(()=> mainMenu, 1000)
 }

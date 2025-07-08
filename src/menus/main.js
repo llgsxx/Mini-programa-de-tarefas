@@ -1,5 +1,6 @@
 import { isCancel, select } from "@clack/prompts";
 import { createTaskMenu } from "./create.js";
+import { listTaskMenu } from "./list.js";
 
 export async function mainMenu() {
   const option = await select({
@@ -19,6 +20,7 @@ export async function mainMenu() {
       return;
     }
     case "list": {
+      listTaskMenu()
       return;
     }
     default: {
