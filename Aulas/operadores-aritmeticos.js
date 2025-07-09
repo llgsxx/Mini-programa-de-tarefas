@@ -32,3 +32,5 @@ console.log("Resto:", resto);
 console.log("Potência:", potencia);
 
 // Dica: operadores aritméticos funcionam em qualquer parte do código que precise de cálculos!
+
+
